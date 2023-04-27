@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewNoLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150sp"
+        android:gravity="center"
+        android:text="На сегодня уроков нет"
+        android:layout_centerHorizontal="true"
+        android:textColor="#808080"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/numberHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350sp"
+        android:layout_height="15sp"
+        android:layout_below="@id/textViewNoLesson"
+        android:layout_centerHorizontal="true"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/gradient_line" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/profile_alt"
+    tools:context=".activities.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="125dp"
+        android:contentDescription="@string/logo_alt"
+        app:srcCompat="@drawable/logogo" />
+
+
+    <ImageView
+        android:id="@+id/imageViewProfilePic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/container"
+        android:layout_alignStart="@+id/container"
+
+        android:contentDescription="@string/profile_alt"
+        app:srcCompat="@drawable/profile" />
+
+    <View
+        android:id="@+id/container"
+        android:layout_width="366dp"
+        android:layout_height="90dp"
+
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/custom_container" />
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/gradient"
+        android:text="@string/log_out"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/container"
+        />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15sp"
+        android:layout_toEndOf="@+id/imageViewProfilePic"
+        android:layout_alignTop="@+id/container"
+        android:fontFamily="sans-serif-light"
+        android:maxLength="18"
+        android:text="Афанасьев Роман"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/textViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15sp"
+        android:fontFamily="sans-serif-light"
+        android:maxLength="16"
+        android:text="ИС-20122"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/imageViewProfilePic"
+        android:layout_alignBottom="@+id/container"
+        />
+
+    <Button
+        android:id="@+id/buttonBack"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@drawable/border"
+        android:text="@string/back"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+
+

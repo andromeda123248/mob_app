@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/gradient_circle" />
+
+    <!--Creating a TextView-->
+    <TextView
+        android:id="@+id/textViewStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_toEndOf="@id/imageView"
+        android:fontFamily="@font/roboto_black_italic"
+        android:gravity="center"
+        android:text="Student Name"
+        android:textColor="#808080"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/roboto_black_italic"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

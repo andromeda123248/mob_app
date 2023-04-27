@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/gradient_circle" />
+
+    <!--Creating a TextView-->
+    <TextView
+        android:id="@+id/textViewLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/imageView"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Lesson"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="8:20"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textViewRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLesson"
+        android:layout_toEndOf="@id/textViewNumber"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="123A"
+        android:textColor="#808080"
+        android:textSize="17sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
